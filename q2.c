@@ -60,7 +60,7 @@ int main(){
 			}
 		}
 	}
-	printf("Sorted Array: \n")
+	printf("Sorted Array: \n");
 	for (int i=0; i<10;i++){
 		printf("Element %d: %d", i+1, arr[i]);
 	}
