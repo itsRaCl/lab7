@@ -8,7 +8,7 @@ int linearSearch(int arr[10], int s){
 }
 
 int binarySearch(int arr[10], int s){
-	int f=1, ll = 0, ul=10, mid =4;
+	int f=1, ll = 0, ul=9, mid =4;
 
 	int sorted =0;
 
@@ -31,9 +31,9 @@ int binarySearch(int arr[10], int s){
 		}
 	}
 	while (ll <= ul){
-		if (mid ==s) return mid;
-		else if (mid > s) ul= mid-1;
-		else if (mid < s) ll = mid +1;
+		if (arr[mid] ==s) return mid;
+		else if (arr[mid] > s) ul= mid-1;
+		else if (arr[mid] < s) ll = mid +1;
 	}
 	return -1;
 }
